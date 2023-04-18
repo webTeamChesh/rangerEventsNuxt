@@ -1,0 +1,240 @@
+/* styles for the Vue / Axios generated eco consultants table and pagination */
+table.usr_TableDefault.eco-cons-table {
+    width: 100% !important;
+  }
+  table.usr_TableDefault.eco-cons-table p {
+    margin-bottom: 0;
+  }
+  table.usr_TableDefault.eco-cons-table th {
+    width: 20%;
+  }
+  table.usr_TableDefault.eco-cons-table:first-of-type {
+    margin-top: 0;
+  }
+  .api-results-info p {
+    display: inline-block;
+    margin-right: 35px;
+  }
+  .pagination ul li button {
+    margin: 0 20px 16px 0 !Important;
+    background-color: #fff;
+    border: 1px solid #0264f7;
+    border-radius: 3px;
+    padding: .375rem .75rem;
+    color: #0250C5;
+  }
+  .pagination ul li button:hover {
+    z-index: 2;
+    color: #0242A2;
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+  }
+  .pagination ul li button:focus {
+    outline: 3px solid #ffa100;
+  }
+  /* Included as BS2 does not have the spinner CSS - no need to copy in BS5 */
+  .spinner-grow.text-success {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: text-bottom;
+    background-color: currentColor;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-animation: .75s linear infinite spinner-grow;
+    animation: .75s linear infinite spinner-grow;
+    color: #198754 !important;
+  }
+  a.cec-button, button.cec-button {
+    border: 3px solid #206c49;
+    color: #000;
+    text-align: left;
+    position: relative;
+    border-radius: 50rem !important;
+    padding: .5rem 2.5rem .5rem 1rem;
+    font-size: 1.2rem;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: transparent;
+    background-image: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    box-shadow: 0 10px 20px -6px rgb(0 0 0 / 12%);
+  }
+  @media (max-width: 768px) {
+    a.cec-button {
+      padding: .5rem 2rem .5rem 1.7rem;
+      font-size: 1rem;
+    }
+  }
+  a.cec-button:hover, button.cec-button:hover {
+    background-color: #206c49;
+    color: #fff;
+  }
+  a.cec-button:after, button.cec-button:after {
+    content: ' ';
+    display: inline-block;
+    border-bottom: 3px solid #206c49;
+    border-right: 3px solid #206c49;
+    height: 10px;
+    width: 10px;
+    transform: rotate(-45deg);
+    z-index: 10;
+    margin-left: 1rem;
+    vertical-align: middle;
+    position: absolute;
+    top: 40%;
+    right: 20px;
+  }
+  a.cec-button:hover:after, button.cec-button:hover:after {
+    border-color: #fff;
+  }
+  .cec-button.cec-button--back {
+    padding: .5rem 1rem .5rem 2rem;
+  }
+  .cec-button.cec-button--back:after {
+    border: none;
+  }
+  .cec-button.cec-button--back:before {
+    content: ' ';
+    display: inline-block;
+    border-bottom: 3px solid #206c49;
+    border-right: 3px solid #206c49;
+    height: 10px;
+    width: 10px;
+    transform: rotate(-220deg);
+    z-index: 10;
+    margin-left: 1rem;
+    vertical-align: middle;
+    position: absolute;
+    top: 40%;
+    left: 0;
+  }
+  .cec-button.cec-button--back:hover:before {
+    border-color: #fff;
+  }
+  .cec-button.cec-button--back:focus {
+      outline: 4px solid #ffa100 !important;
+      outline-offset: 0.063rem;
+      -webkit-transition: outline-color .2s ease-out;
+      transition: outline-color .2s ease-out;
+  }
+  /* || Check boxes */
+  .category-options {
+    margin: 1.5rem 0 2rem 0;
+  }
+  .form-check {
+    margin-bottom: 0.7rem;
+  }
+  .form-check-input {
+    border: 1px solid #206c49;
+  }
+  /* Specific to rangers events */
+  #vanilla-toast-container {
+    text-align: center;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    position: fixed;
+  }
+  #vanilla-toast {
+    display: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    background: rgba(0, 0, 0, 0.76);
+    color: #ffffff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+  }
+  #vanilla-toast-text {
+    display: inline;
+  }
+  #vanilla-toast-close-button {
+    display: none;
+    margin-left: 15px;
+    font-size: 15px;
+  }
+  #vanilla-toast.success {
+    background: rgba(92, 184, 92, 0.76);
+  }
+  #vanilla-toast.info {
+    background: rgba(91, 192, 222, 0.76);
+  }
+  #vanilla-toast.warning {
+    background: rgba(236, 151, 31, 0.76);
+  }
+  #vanilla-toast.error {
+    background: rgba(201, 48, 44, 0.76);
+  }
+  .featured-img {
+    box-shadow: 0 5px 11px 0 rgb(0 0 0 / 18%), 0 4px 15px 0 rgb(0 0 0 / 15%);
+  }
+  /* Ranger event styles */
+  a.ranger-event-title-link {
+    text-decoration: none;
+    border-bottom: 1px solid #0248b1;
+    color: #0248b1;
+    font-size: 1.2rem;
+  }
+  .ranger-event-title-link-button {
+    color: #0248b1;
+    font-size: 1.2rem;
+    border: none;
+    background-color: transparent;
+    text-align: left;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+  .ranger-event-title-link-button:focus {
+      outline: 4px solid #ffa100 !important;
+      outline-offset: 0.063rem;
+      -webkit-transition: outline-color .2s ease-out;
+      transition: outline-color .2s ease-out;
+  }
+  .ranger-event-heading-link {
+    margin-bottom: 1.5rem;
+    line-height: 1.7rem;
+  }
+  .ranger-event-card:nth-of-type(odd) {
+    background-color: #eff5f2
+  }
+  .ranger-event-card {
+    margin-bottom: 10px;
+  }
+  .search-options-container {
+    background-color: #eff5f2
+  }
+  .search-options-container h2, .search-options-container h3 {
+    color: #212529;
+    font-weight: 400;
+  }
+  .search-options-container h2 {
+    font-size: 1.8rem;
+  }
+  .search-options-container h3 {
+    font-size: 1.3rem;
+  }
+  .date-range label {
+    display: block;
+    margin-top: 10px;
+    color: #212529;
+    font-size: 0.9rem;
+  }
+  .date-range input {
+    width: 95%;
+  }
+  .btn-outline-secondary {
+    color: #212529;
+  }
+  /*
+  button.ranger-event-title-link-button.cec-button {
+      outline: 3px solid #ffa100;
+  }
+  */
