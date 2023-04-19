@@ -1,24 +1,18 @@
 {
-  "name": "nuxt-ranger-events",
-  "version": "1.0.0",
+  "name": "nuxt-app",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
+    "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "deploy": "push-dir --dir=dist --branch=main --cleanup"
-  },
-  "dependencies": {
-    "bootstrap": "^4.6.2",
-    "bootstrap-vue": "^2.22.0",
-    "core-js": "^3.25.3",
-    "nuxt": "^2.15.8",
-    "vue": "^2.7.10",
-    "vue-server-renderer": "^2.7.10",
-    "vue-template-compiler": "^2.7.10"
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "push-dir": "^0.4.1"
+    "@types/node": "^18",
+    "nuxt": "^3.4.1"
+  },
+  "dependencies": {
+    "@jridgewell/sourcemap-codec": "^1.4.15"
   }
 }
